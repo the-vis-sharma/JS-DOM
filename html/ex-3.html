@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    
+    <form>
+        <p id="err_msg" style="color: red;"></p>
+        <input type="text" id="first_name" placeholder="First Name" onfocusout="validate(0)" name="fname">
+        <input type="text" id="last_name" placeholder="Last Name" onfocusout="validate(1)"><br>
+
+        <input type="text" id="dob" placeholder="dob dd/MM/yyyy" onfocusout="validate(2)">
+        <label>Gender</label>
+        <input type="radio" value="Male" name="gender" id="male" onfocusout="validate(3)"> Male
+        <input type="radio" value="Female" name="gender" id="female" onfocusout="validate(4)"> Female<br>
+
+        <input type="text" id="email" placeholder="Email" onfocusout="validate(5)">
+        <input type="text" id="mobile" placeholder="Mobile" onfocusout="validate(6)"><br>
+
+        <input type="text" id="building" placeholder="Building" onfocusout="validate(7)">
+        <input type="text" id="street" placeholder="Street" onfocusout="validate(8)"><br>
+
+        <input type="text" id="area" placeholder="Area" onfocusout="validate(9)">
+        <input type="text" id="city" placeholder="City" onfocusout="validate(10)"><br>
+
+        <input type="text" id="state" placeholder="State" onfocusout="validate(11)">
+        <input type="text" id="pin" placeholder="Pin Code" onfocusout="validate(12)"><br>
+
+        <button disabled id="submit">Send Details</button>
+    </form>
+
+    <script src='../js/ex-3.js'></script>
+</body>
+</html>
